@@ -15,4 +15,26 @@ Capítulo 2: Flujo de trabajo básico
 Capítulo 3: Repositorios remotos > indice.txt
 git status
 git add indice.txt
-git commit -m "Capitulo 1 "
+git status
+
+
+ejercicio 4
+git commit -m "Añadimos el nuevo capitulo"
+
+
+ejercicio 5
+cat > indice.txt
+Capítulo 1: Introducción a Git
+Capítulo 2: Flujo de trabajo básico
+Capítulo 3: Gestión de ramas
+Capítulo 4: Repositorios remotos
+Ctrl+D
+git diff
+git add indice.txt
+git commit -m "Añadido capítulo 3 sobre gestión de ramas"
+
+ejercicio 6
+
+git show
+git commit --amend -m "Añadido capítulo 3 sobre gestión de ramas al índice."
+git show
