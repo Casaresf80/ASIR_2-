@@ -1,0 +1,33 @@
+
+Punto 1
+
+git log
+mkdir capitulos
+echo > capitulos/capitulo1.txt
+git add .
+git commit -m "Añadido capítulo 1."
+git log
+
+Punto 2
+
+echo > capitulos/capitulo2.txt
+git add .
+git commit -m "Añadido capítulo 2."
+git diff HEAD~2..HEAD
+
+Punto 3
+
+echo > capitulos/capitulo3.txt
+git add .
+git commit -m "Añadido capítulo 3."
+git log
+
+
+Punto 4
+
+echo "Capítulo 5: Conceptos avanzados" >> indice.txt
+git add .
+git commit -m "Añadido capítulo 5 al índice."
+git annotate indice.txt
+
+
