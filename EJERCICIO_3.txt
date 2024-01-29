@@ -1,0 +1,52 @@
+
+
+EJER 1
+
+git branch bibliografia
+git branch -av
+
+EJER 2
+
+echo "Indice"> capitulos/capitulo4.txt
+git add capitulos/capitulo4.txt
+git commit -m "Añadido capítulo 4."
+git log --graph --all --oneline
+
+EJER 3
+
+git checkout bibliografia
+echo Chacon, S. and... > bibliografia.txt
+git add bibliografia.txt
+git commit -m "He añadido mi primera referencia bibliográfica"
+git log --graph --all --oneline
+
+EJER 4
+
+git checkout master
+git log --graph --all --oneline
+git branch -D bibliografia
+git log --graph --all --oneline
+
+EJER 5
+
+git branch bibliografia
+git checkout bibliografia
+echo Scott Chacon and Ben Straub. Pro Git. Apress. > bibliografia.txt
+git add .
+git commit -m "He añadido una nueva referencia bibliográfica.”
+git checkout master
+echo Chacon, S. and Straub, B. Pro Git. Apress. >> bibliografia.txt
+echo Loeliger, J. and McCullough, M. Version control with Git. O’Reilly. >> bibliografia.txt
+git add .
+git commit -m "He añadido una nueva referencia bibliográfica.”
+git merge bibliografia
+echo Chacon, S. and Straub, B. Pro Git. Apress. > bibliografia.txt
+echo Loeliger, J. and McCullough, M. Version control with Git. O’Reilly. >> bibliografia.txt
+echo Hodson, R. Ry’s Git Tutorial. Smashwords (2014) >> bibliografia.txt
+git add .
+git commit -m “Resuelto conflicto de bibliografía.”
+git log --graph --all --oneline
+
+
+
+
