@@ -1,0 +1,24 @@
+
+EJER 1
+2 git remote add github https://github.com/Casaresf80/ASIR_2.git
+3 git remote -v
+
+EJER 2 
+git push github master
+
+
+EJER 3
+git clone 
+echo Alejandro Casares acasaresf50@gmail.com > autores.txt
+git add .
+git commit -m "Añadir autor"
+git push origin master.
+
+
+EJER 4 
+git clone https://github.com/Casaresf80/ASIR_2.git
+git checkout -b autoria
+echo Alejandro Casares acasaresf50@gmail.com > autores.txt
+git add .
+git commit -m "Añadido nuevo autor"
+git push origin autoria
